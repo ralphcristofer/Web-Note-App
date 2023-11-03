@@ -4,11 +4,11 @@ if (process.env.NODE_ENV != 'production') {
 }
 
 // Import dependencies
-const express = require('express')
-const dbconnection = require('./config/dbconnection')
+const express = require('express');
+const dbconnection = require('./config/dbconnection');
 
 // Create express app
-const app = express()
+const app = express();
 
 // Database connection
 dbconnection();
