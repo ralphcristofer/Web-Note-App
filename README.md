@@ -3,7 +3,7 @@
 Prerequisites:
 - Nodejs
 - Git
-- MongoDB, Compass
+- MongoDB Atlas, Compass
 - Postman
 
 1. Create package.json file
@@ -15,5 +15,8 @@ Prerequisites:
 3. Adding "dev" script in package.json
 > "dev": "nodemon server.js" 
 
-4. Run  server.js
+4. Run server.js
 > npm run dev
+
+5. Create database connection using mongoose
+> await mongoose.connect('your database connection string');
