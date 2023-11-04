@@ -1,2 +1,3 @@
 # Environment variables are not pushed due to security reasons
+node_modules/
 .env
