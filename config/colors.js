@@ -1,10 +1,10 @@
 // Coloring
 const RESET_COLOR = "\x1b[0m";
-const GREEN = "\x1b[32m";
-const YELLOW_BACKGROUND = "\x1b[43m";
+const BLACK_TEXT = "\x1b[30m";
+const GREEN_BACKGROUND = "\x1b[42m";
 
 module.exports = {
     RESET_COLOR,
-    GREEN,
-    YELLOW_BACKGROUND
+    BLACK_TEXT,
+    GREEN_BACKGROUND
 };
