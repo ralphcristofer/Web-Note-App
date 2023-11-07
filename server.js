@@ -11,7 +11,7 @@ const dbconnection = require('./config/dbconnection');
 const app = express();
 
 // Configure express app to read json
-app.use(express.json);
+app.use(express.json());
 
 // Database connection
 dbconnection();
