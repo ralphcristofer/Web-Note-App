@@ -20,3 +20,6 @@ Prerequisites:
 
 5. Create database connection using mongoose
 > await mongoose.connect('your database connection string');
+
+6. After successfully connected to the database, create a schema using mongoose
+> Refer to Quick Start Guide https://mongoosejs.com/docs/index.html
