@@ -23,3 +23,6 @@ Prerequisites:
 
 6. After successfully connected to the database, create a schema using mongoose
 > Refer to Quick Start Guide https://mongoosejs.com/docs/index.html
+
+7. Create a new route for the note (post) and make sure to configure express app to read json
+> app.use(express.json());
