@@ -23,11 +23,22 @@ app.get("/", (req, res) => {
     res.json({ hello: "world" });
 });
 
-// Send data to the app
-app.post("/notes", (req, res) => {
-    // Get the sent data
+// Setup HTTP POST with async operation
+app.post("/notes", async (req, res) => {
+    // Get the content of the note
     const title = req.body.title;
     const body = req.body.body;
+
+    // Create a new note in the database
+    const note = await Note.create({
+       title: title,
+       body: body
+    });
+
+    // Response back to client with the 
+    // newly created note
+    // in JSON format
+    res.json({ note: note });
 });
 
 // Starting the server
