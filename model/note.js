@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 
 // Creating a schema with two parts
@@ -10,4 +9,4 @@ const noteSchema = new mongoose.Schema({
 // Compiling schema into a model
 const Note = mongoose.model('Note', noteSchema);
 
-module.exports = Note;
+module.exports = Note; 
